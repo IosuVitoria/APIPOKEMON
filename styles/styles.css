@@ -1,0 +1,177 @@
+body {
+  background-image: url('https://wallpapercave.com/wp/wp8977509.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  font-family: rubik;
+  color: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.pikachu {
+  height: 100px;
+  margin-right: 50px;
+  width: 100px;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 54px;
+  margin-bottom: 70px;
+  background-color: rgba(255, 99, 71, 0.534);
+  color: white;
+  font-weight: bold;
+  width: 40%;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#audio{
+  display: none
+}
+
+.container {
+  padding: 40px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="submit"] {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card {
+  list-style: none;
+  padding: 40px;
+  background-color: #f4f4f4c5;
+  color: #222;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid tomato;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.card-subtitle {
+  font-weight: lighter;
+  color: #666;
+  margin-top: 5px;
+}
+
+.card-image {
+  height: 180px;
+  border-radius: 50%;
+}
+
+#pokedex {
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+
+form input[type="text"],
+form input[type="submit"] {
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #222;
+  border: 2px solid tomato;
+  height: 30px;
+  width: 200px;
+  margin: 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+form input[type="submit"] {
+  background-color: tomato;
+  color: white;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  animation: bounce 0.5s linear;
+}
+
+.card {
+  position: relative;
+}
+
+
+.type:first-child {
+  z-index: 2;
+}
+
+
+.card-types {
+  margin-top: 10px;
+}
+
+.card-types .type {
+  display: inline-block;
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 20px;
+  color: white;
+}
+
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(-0px);
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  font-size: 24px;
+  color: #ffffff;
+  background-color: rgba(207, 71, 17, 0.9);
+  border: none;
+  padding: 10px 20px;
+  border: 1px solid rgba(3, 1, 12, 0.938);
+  margin: 0 10px;
+  border-radius: 50px;
+}

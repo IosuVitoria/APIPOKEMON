@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="javascript/main2.js" defer></script>
+  <script src="javascript/search.js" defer></script>
+  <script src="javascript/music.js" defer></script>
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/selector.css" class="stylesheet">
+  <link rel="shortcut icon" href="assets/pokeball.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <audio id="audio" controls>
+    <source type="audio/wav" src="assets/music.mp3">
+  </audio>
+  <header class="header">
+    <img src="assets/logoPagina.png" alt="logo pokemon" class="pikachu">
+    <h1>Pokedex</h1>
+  </header>
+  <div class="nav">
+    <div class="nav-list">
+      <button class="btn btn-header" id="ver-todos">Ver todos</button>
+      <button class="btn btn-header normal" id="normal">Normal</button>
+      <button class="btn btn-header fire" id="fire">Fire</button>
+      <button class="btn btn-header water" id="water">Water</button>
+      <button class="btn btn-header grass" id="grass">Grass</button>
+      <button class="btn btn-header electric" id="electric">Electric</button>
+      <button class="btn btn-header ice" id="ice">Ice</button>
+      <button class="btn btn-header fighting" id="fighting">Fighting</button>
+      <button class="btn btn-header poison" id="poison">Poison</button>
+      <button class="btn btn-header ground" id="ground">Ground</button>
+      <button class="btn btn-header flying" id="flying">Flying</button>
+      <button class="btn btn-header psychic" id="psychic">Psychic</button>
+      <button class="btn btn-header bug" id="bug">Bug</button>
+      <button class="btn btn-header rock" id="rock">Rock</button>
+      <button class="btn btn-header ghost" id="ghost">Ghost</button>
+      <button class="btn btn-header dragon" id="dragon">Dragon</button>
+    </div>
+  </div>
+  <div class="container">
+    <form id="filterForm">
+      <input type="text" id="nameFilter" placeholder="Filtrar por nombre">
+      <input type="submit" value="Filtrar">
+    </form>
+    <ol id="pokedex"></ol>
+  </div>
+
+  <div class="overlay"></div>
+  <div class="pokemon-details">
+    <div class="pokemon-details-content">
+      <span class="close-button" onclick="closeDetails()">X</span>
+      <div id="pokemon-details-container"></div>
+    </div>
+  </div>
+
+  
+</body>
+
+</html>
+</html>
